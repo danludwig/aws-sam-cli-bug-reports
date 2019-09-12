@@ -8,7 +8,7 @@ Seems to be an issue when two or more `AWS::DynamoDB::Table` resources (perhaps 
 1. Install aws sam cli version 0.21.0
 1. `git clone https://github.com/danludwig/aws-sam-cli-bug-reports.git`
 1. `cd ./v0.21.0/two-dynamos-with-intrinsic-tags`
-1. `sam build`
+1. `sam build` or `sam build --use-container`
 1. Examine error stack trace
 
 ## Severity
