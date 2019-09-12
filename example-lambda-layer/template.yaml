@@ -1,0 +1,29 @@
+AWSTemplateFormatVersion: 2010-09-09
+Transform: AWS::Serverless-2016-10-31
+Description: An example layer to test with the aws sam cli
+
+Parameters:
+
+  LayerName:
+    Type: String
+    Default: danludwig-example-nodejs-lambda-layer
+
+Outputs:
+
+  LayerName:
+    Value: !Ref LayerName
+
+  LayerArn:
+    Value: !Ref Layer
+
+Resources:
+  Layer:
+    Type: AWS::Serverless::LayerVersion
+    Properties:
+      CompatibleRuntimes:
+        - nodejs8.10
+        - nodejs10.x
+      ContentUri: ./src/
+      Description: An example layer to test with the aws sam cli
+      LayerName: !Ref LayerName
+      RetentionPolicy: Retain

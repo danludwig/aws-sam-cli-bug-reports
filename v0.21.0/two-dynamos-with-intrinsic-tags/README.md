@@ -24,7 +24,6 @@ The bug does not seem to surface when the stack template only contains a single 
 Furthermore, commenting out the sections which use the `!If` / `!Ref AWS::NoValue` blocks results in a successful build with both DynamoDB resources. For example, the following will result in a successful build:
 
 ```
-
   DynamoDbTableOne:
     Type: AWS::DynamoDB::Table
     Properties:
