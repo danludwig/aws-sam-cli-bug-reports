@@ -1,5 +1,7 @@
 # AWS SAM CLI Bug Report for v0.20.0
 
+## Multiple resources using intrinsic functions combined with AWS::NoValue
+
 Seems to be an issue when two or more `AWS::DynamoDB::Table` resources (perhaps other resources as well?) use conditional intrinsic functions employing `!Ref AWS::NoValue`.
 
 ## Steps to reproduce
