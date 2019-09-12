@@ -16,9 +16,9 @@ Moderate. Results in having to modify buildspec.yaml files to force aws sam cli 
 
 This example was built from scratch with minor modifications to a new `sam init` project.
 
-The bug does not seem to surface when the stack template only contains a single DynamoDB resource.
+The bug does not seem to surface when the stack template only contains a single DynamoDB resource. For example, commenting out either table from the template will result in a successful build.
 
-Commenting out the sections which use the `!If` / `!Ref AWS::NoValue` blocks results in a successful build with both DynamoDB resources. For example, the following will result in a successul build:
+Furthermore, commenting out the sections which use the `!If` / `!Ref AWS::NoValue` blocks results in a successful build with both DynamoDB resources. For example, the following will result in a successul build:
 
 ```
 
