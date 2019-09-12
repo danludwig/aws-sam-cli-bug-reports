@@ -16,4 +16,4 @@ Update the layer version and increment after each new version deploy.
 
 Update the layer version and increment after each new version deploy.
 
-> aws lambda add-layer-version-permission --layer-name danludwig-example-nodejs-lambda-layer --statement-id public-layer-allow --version-number 1 --principal '*' --action lambda:GetLayerVersion --output text --profile danludwig --region us-east-2
+> aws lambda add-layer-version-permission --layer-name danludwig-example-nodejs-lambda-layer --statement-id public-layer-allow --version-number 2 --principal '*' --action lambda:GetLayerVersion --output text --profile danludwig --region us-east-2

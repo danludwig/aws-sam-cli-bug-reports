@@ -22,6 +22,7 @@ Resources:
     Properties:
       CompatibleRuntimes:
         - nodejs8.10
+        - nodejs10.x
       ContentUri: ./src/
       Description: An example layer to test with the aws sam cli
       LayerName: !Ref LayerName
