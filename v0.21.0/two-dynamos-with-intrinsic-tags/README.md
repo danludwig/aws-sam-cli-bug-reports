@@ -9,6 +9,7 @@ Seems to be an issue when two or more `AWS::DynamoDB::Table` resources (perhaps 
 1. `git clone https://github.com/danludwig/aws-sam-cli-bug-reports.git`
 1. `cd ./v0.21.0/two-dynamos-with-intrinsic-tags`
 1. `sam build`
+1. Examine error stack trace
 
 ## Severity
 
