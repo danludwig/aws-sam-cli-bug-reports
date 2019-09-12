@@ -19,7 +19,7 @@ Moderate. Resulted in having to change from `!Ref LayerArn` to `!Sub ${LayerArn}
 
 This example was built from scratch with minor modifications to a new `sam init` project.
 
-The bug does not seem to surface when environemnt variable values only use `!Ref` against template parameters.
+The bug does not seem to surface when environment variable values only use `!Ref` against template parameters.
 
 Commenting out environment variables which use `!GetAtt` against a custom resource cause the builds to succeed. For example, the following will result in a successful build:
 
