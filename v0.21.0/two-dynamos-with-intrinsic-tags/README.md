@@ -21,7 +21,7 @@ This example was built from scratch with minor modifications to a new `sam init`
 
 The bug does not seem to surface when the stack template only contains a single DynamoDB resource. For example, commenting out either table from the template will result in a successful build.
 
-Furthermore, commenting out the sections which use the `!If` / `!Ref AWS::NoValue` blocks results in a successful build with both DynamoDB resources. For example, the following will result in a successul build:
+Furthermore, commenting out the sections which use the `!If` / `!Ref AWS::NoValue` blocks results in a successful build with both DynamoDB resources. For example, the following will result in a successful build:
 
 ```
 
@@ -62,7 +62,6 @@ Furthermore, commenting out the sections which use the `!If` / `!Ref AWS::NoValu
         - KeyType: HASH
           AttributeName: id
       BillingMode: PAY_PER_REQUEST
-
 ```
 
 Build error stack trace:
