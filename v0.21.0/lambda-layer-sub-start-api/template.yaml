@@ -33,8 +33,8 @@ Resources:
         Variables:
           SAFE_ENVIRONMENT_VARIABLE_1:
             !Ref TemplateParameterOne
-          OFFENDING_ENVIRONMENT_VARIABLE:
-            !GetAtt MyCustomResource.Value
+          # OFFENDING_ENVIRONMENT_VARIABLE:
+          #   !GetAtt MyCustomResource.Value
           SAFE_ENVIRONMENT_VARIABLE_2:
             !Ref MyCustomResource
 
